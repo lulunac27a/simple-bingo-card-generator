@@ -6,3 +6,8 @@ td {
     text-align: center;
     table-layout: fixed;
 }
+
+* {
+    font-family: system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
