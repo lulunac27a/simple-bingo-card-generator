@@ -21,7 +21,7 @@ generateButton.addEventListener("click", () => {
         if (bingoTable.checked) {
             bingoTable
                 .querySelector(`#row-3`)
-                .querySelector(`#cell-3-3`).textContent = "FREE";
+                .querySelector(`#cell-3-3`).textContent = "X";
         }
     }
 });
