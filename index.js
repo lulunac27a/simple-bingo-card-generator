@@ -1,5 +1,4 @@
 const generateButton = document.getElementById("generate"); //button to generate bingo board
-
 const bingoTable = document.getElementById("bingo-table"); //bingo table
 generateButton.addEventListener("click", () => {
     for (let i = 0; i < 5; i++) {
