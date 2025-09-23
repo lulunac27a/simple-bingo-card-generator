@@ -1,4 +1,5 @@
 const generateButton = document.getElementById("generate"); //button to generate bingo board
+
 const bingoTable = document.getElementById("bingo-table"); //bingo table
 generateButton.addEventListener("click", () => {
     for (let i = 0; i < 5; i++) {
@@ -17,6 +18,11 @@ generateButton.addEventListener("click", () => {
                     cellNumber.toString();
                 j++;
             }
+        }
+        if (bingoTable.checked) {
+            bingoTable
+                .querySelector(`#row-3`)
+                .querySelector(`#cell-3-3`).textContent = "FREE";
         }
     }
 });
