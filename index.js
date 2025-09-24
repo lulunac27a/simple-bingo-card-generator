@@ -21,8 +21,8 @@ generateButton.addEventListener("click", () => {
         if (bingoTable.checked) {
             //if free space checkbox is checked
             bingoTable
-                .querySelector(`#row-3`)
-                .querySelector(`#cell-3-3`).textContent = "X"; //set center cell to X
+                .querySelector("#row-3")
+                .querySelector("#cell-3-3").textContent = "X"; //set center cell to X
         }
     }
 });
