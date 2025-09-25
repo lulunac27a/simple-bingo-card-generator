@@ -1,5 +1,6 @@
 const generateButton = document.getElementById("generate"); //button to generate bingo board
 const bingoTable = document.getElementById("bingo-table"); //bingo table
+const freeSpaceCheckbox = document.getElementById("free-space-checkbox"); //checkbox to check if free space is in center cell
 generateButton.addEventListener("click", () => {
     for (let i = 0; i < 5; i++) {
         //repeat for each row in bingo board
@@ -18,7 +19,7 @@ generateButton.addEventListener("click", () => {
                 j++;
             }
         }
-        if (bingoTable.checked) {
+        if (freeSpaceCheckbox.checked) {
             //if free space checkbox is checked
             bingoTable
                 .querySelector("#row-3")
